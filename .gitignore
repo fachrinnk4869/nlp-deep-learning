@@ -1,2 +1,5 @@
 checkpoints*
 .vscode
+transformer/*.pth
+*.pth
+train_mt_lstm_bleu_1e4.ipynb
