@@ -1,4 +1,4 @@
-epoch,eval_loss,eval_runtime,eval_samples_per_second,eval_steps_per_second,eval_bleu,eval_gen_len,should_save
+Epoch,Val Loss,eval_runtime,eval_samples_per_second,eval_steps_per_second,eval_bleu,eval_gen_len,should_save
 1.0,3.068488359451294,15.6962,127.42,7.964,1.4038,19.623,N/A
 2.0,2.980410575866699,15.7704,126.82,7.926,1.3587,19.6555,N/A
 3.0,2.9050629138946533,15.925,125.588,7.849,1.3453,19.673,N/A
