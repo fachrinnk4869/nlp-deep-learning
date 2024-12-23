@@ -74,7 +74,7 @@ _Phi 3.5 Finetune Model Loss Plot_
 | RNN        | 0.0030 | 2.5675  | 0.0082 |
 | LSTM       | 0.0004        | 2.4243          | 0.0100 |
 | Transformer| 0.0001        | 0.9      | 0.54869 |
-| T5         | 0.0004 | 2.4243   | 0.0100 |
+| T5         | 0.0004 | 2.4243   | 0.2098 |
 | Phi3_5 finetuned_one_shot | 1.092100  | 1.079701   | 0.2780 |
 | Phi3_5 finetuned_few_shot | 1.092100  | 1.079701   | 0.2837 |
 | Phi3_5 raw_one_shot       |         |           | 0.3978 |
