@@ -59,17 +59,8 @@ To evaluate:
 1. Record the **loss** over epochs.
 
 **Plots of Loss and Accuracy over Epochs**  
-_RNN Model Loss Plot_  
-![image](https://github.com/user-attachments/assets/72523ead-6fbf-40d3-bd3f-5bb6a4552cba)
-
-_LSTM Model Loss Plot_  
-![image](https://github.com/user-attachments/assets/a02ba58b-47e6-42be-8a1a-5204b309fa91)
-
-_Transformer Model Loss Plot_  
-![image](https://github.com/user-attachments/assets/b3df1961-2e68-462a-9c55-194352b3b88c)
-
-_T5 Model Loss Plot_  
-![image](https://github.com/user-attachments/assets/cc54b45b-7740-4412-b36f-2aeb62b2c321)
+_RNN, LSTM, Transformer, T5 Model Loss Plot_  
+![image](https://github.com/user-attachments/assets/42b7531e-dcde-4d2f-90df-66f151401d03)
 
 _Phi 3.5 Finetune Model Loss Plot_  
 ![image](https://github.com/user-attachments/assets/2aa87340-67ba-41ff-b7b8-1fab9fdb7a36)
@@ -90,6 +81,12 @@ _Phi 3.5 Finetune Model Loss Plot_
 | Phi3_5 raw_few_shot       |         |           | 0.3820 |
 
 ---
+### Charts
+**Average Time Taken Each Epoch Each Model**
+![image](https://github.com/user-attachments/assets/3a1c26ec-c3c2-4213-9c6a-d13334664694)
+
+**Bleu Score Each Model**
+![image](https://github.com/user-attachments/assets/8d39fa40-037e-40ed-8c91-72204d74a8f6)
 
 ## Examples
 
