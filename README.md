@@ -81,7 +81,7 @@ _Phi 3.5 Finetune Model Loss Plot_
 | Phi3_5 raw_few_shot       |         |           | 0.3820 |
 
 ---
-### Charts
+## Charts
 **Average Time Taken Each Epoch Each Model**
 ![image](https://github.com/user-attachments/assets/3a1c26ec-c3c2-4213-9c6a-d13334664694)
 
