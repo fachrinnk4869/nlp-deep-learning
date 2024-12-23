@@ -62,6 +62,7 @@ To evaluate:
 
 **Plots of Loss and Accuracy over Epochs**  
 _RNN Model Loss Plot_  
+![image](https://github.com/user-attachments/assets/0f42e206-1356-43df-ba31-d6c90c3dbc74)
 
 _LSTM Model Loss Plot_  
 
