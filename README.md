@@ -27,7 +27,7 @@ This project compares the use of SimpleRNN and LSTM layers in an encoder-decoder
 ### Objective
 To evaluate:
 - **Translation quality** based on BLEU scores
-- **Loss** and **accuracy** during training
+- **Loss** during training
 - How the model generalizes to **new inputs**
 
 ---
@@ -42,8 +42,8 @@ To evaluate:
 ### Code Structure
 
 - `train_mt{name-of-model}.ipynb`: Script to train the model.
-
-
+- `{name-of-model}/evaluation_{name-of-model}_test.csv`: evaluation result of name_model
+- `{name-of-model}/evaluation_{name-of-model}_test.csv`: prediction test result of name_model
 ---
 
 ## Training
@@ -56,9 +56,7 @@ To evaluate:
 - **Epochs**: _Specify number of epochs_
 
 ### Training Procedure
-1. Train the encoder-decoder model using SimpleRNN layers.
-2. Train the encoder-decoder model using LSTM layers.
-3. Record the **loss** and **accuracy** over epochs.
+1. Record the **loss** over epochs.
 
 **Plots of Loss and Accuracy over Epochs**  
 _RNN Model Loss Plot_  
@@ -98,9 +96,12 @@ _Phi 3.5 Finetune Model Loss Plot_
 ### Sample Translations
 
 **Example 1**  
+![image](https://github.com/user-attachments/assets/4bcaade3-d08f-4bd8-89d3-1c7cc2f314d4)
 
 **Example 2**  
+![image](https://github.com/user-attachments/assets/0893da68-8fd6-4293-bb61-aa64150b41c1)
 
 **Example 3**  
+![image](https://github.com/user-attachments/assets/2dfee1ff-04c1-4a84-ba99-15239fbcb423)
 
 ---
