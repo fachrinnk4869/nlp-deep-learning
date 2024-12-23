@@ -65,12 +65,16 @@ _RNN Model Loss Plot_
 ![image](https://github.com/user-attachments/assets/0f42e206-1356-43df-ba31-d6c90c3dbc74)
 
 _LSTM Model Loss Plot_  
+![image](https://github.com/user-attachments/assets/a02ba58b-47e6-42be-8a1a-5204b309fa91)
 
 _Transformer Model Loss Plot_  
+![image](https://github.com/user-attachments/assets/b3df1961-2e68-462a-9c55-194352b3b88c)
 
 _T5 Model Loss Plot_  
+![image](https://github.com/user-attachments/assets/cc54b45b-7740-4412-b36f-2aeb62b2c321)
 
 _Phi 3.5 Finetune Model Loss Plot_  
+![image](https://github.com/user-attachments/assets/2aa87340-67ba-41ff-b7b8-1fab9fdb7a36)
 
 ---
 
