@@ -1,12 +1,12 @@
 
 
-# RNN vs LSTM in Encoder-Decoder Model
+# NLP Model Comparison
 
 link for presentation: [Project presentation](https://docs.google.com/presentation/d/1IIEFGb0Evj3qw8i2bQjIIVzO3g0653PC0b7Ex_bs6ug/edit?usp=sharing)
 
-This project explores the differences between using a SimpleRNN and an LSTM in an encoder-decoder sequence-to-sequence model. The model is designed for a machine translation task, where the source language is encoded and translated into the target language. 
+This project explores the differences between RNN, LSTM, Transformer, T5, Phi3.5 in sequence-to-sequence task. The model is designed for a machine translation task, where the source language is encoded and translated into the target language. 
 
-The primary goal is to compare the performance of SimpleRNN and LSTM layers in terms of translation quality, loss, and BLEU score.
+The primary goal is to compare the performance of all models above in terms of translation quality, loss, and BLEU score.
 
 ---
 
@@ -35,18 +35,6 @@ To evaluate:
 
 ---
 
-## Model Architecture
-
-The encoder-decoder architecture consists of two primary components:
-1. **Encoder**: Converts the input sentence from the source language into a fixed-length context vector.
-2. **Decoder**: Uses the context vector from the encoder to generate the target language translation.
-
-### RNN and LSTM Variants
-- **RNN-based Encoder and Decoder**: Uses SimpleRNN layers for encoding and decoding.
-- **LSTM-based Encoder and Decoder**: Uses LSTM layers for encoding and decoding, leveraging hidden and cell states for better long-term memory.
-
----
-
 ## Implementation
 
 ### Prerequisites
@@ -56,7 +44,7 @@ The encoder-decoder architecture consists of two primary components:
 
 ### Code Structure
 
-- `train.ipynb`: Script to train the model.
+- `train_mt{name-of-model}.ipynb`: Script to train the model.
 
 
 ---
@@ -76,11 +64,15 @@ The encoder-decoder architecture consists of two primary components:
 3. Record the **loss** and **accuracy** over epochs.
 
 **Plots of Loss and Accuracy over Epochs**  
-_RNN Model Loss/Accuracy Plot_  
-![RNN Loss Plot](path/to/rnn_loss_plot.png)
+_RNN Model Loss Plot_  
 
-_LSTM Model Loss/Accuracy Plot_  
-![LSTM Loss Plot](path/to/lstm_loss_plot.png)
+_LSTM Model Loss Plot_  
+
+_Transformer Model Loss Plot_  
+
+_T5 Model Loss Plot_  
+
+_Phi 3.5 Finetune Model Loss Plot_  
 
 ---
 
@@ -88,8 +80,14 @@ _LSTM Model Loss/Accuracy Plot_
 
 | Model      | Training Loss | Validation Loss | BLEU Score |
 |------------|---------------|-----------------|------------|
-| RNN        | 0.0030 2.5675| 2.5675  | 0.0082 |
+| RNN        | 0.0030 | 2.5675  | 0.0082 |
 | LSTM       | 0.0004        | 2.4243          | 0.0100 |
+| Transformer| 0.0001        | 0.9      | 0.54869 |
+| T5         | 0.0004 | 2.4243   | 0.0100 |
+| Phi3_5 finetuned_one_shot | 1.092100  | 1.079701   | 0.2780 |
+| Phi3_5 finetuned_few_shot | 1.092100  | 1.079701   | 0.2837 |
+| Phi3_5 raw_one_shot       |         |           | 0.3978 |
+| Phi3_5 raw_few_shot       |         |           | 0.3820 |
 
 ---
 
@@ -98,32 +96,9 @@ _LSTM Model Loss/Accuracy Plot_
 ### Sample Translations
 
 **Example 1**  
-**Input** (Source Language): _"in the western half the volume increased from million per year in 1998 to in and in 2011
-"_  
-**RNN Output**: _"Kita harus membiarkan tom pergi eos"_  
-**LSTM Output**: _"Ketika masuk rumah di jepang sepatu dibuka eos "_
 
 **Example 2**  
-**Input** (Source Language): _"she obtained a scholarship from the department to study politics in the us"_  
-**RNN Output**: _"Kita harus membiarkan tom pergi eos"_  
-**LSTM Output**: _"Dia menginap di hotel beberapa hari eos"_
+
+**Example 3**  
 
 ---
-
-## BLEU Score
-
-The BLEU (Bilingual Evaluation Understudy) score is a metric for evaluating the quality of text that has been machine-translated from one language to another. Here, we use it to measure the quality of translations produced by the RNN and LSTM models.
-
-**BLEU Score Results**  
-_RNN BLEU Score_: 0.0082 
-_LSTM BLEU Score_: 0.0100
-
----
-
-## Conclusion
-
-Based on the experiments conducted, we observed the following:
-
-- **Translation Quality**: _Describe findings, e.g., "The LSTM model consistently performed better than the RNN model on test data, achieving higher BLEU scores."_
-- **Training Stability**: _Describe findings, e.g., "The RNN model showed signs of instability in loss convergence, while the LSTM maintained smoother loss reduction."_
-- **Generalization to New Inputs**: _Discuss how well each model handled new examples._
