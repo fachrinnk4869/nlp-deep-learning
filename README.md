@@ -13,13 +13,10 @@ The primary goal is to compare the performance of all models above in terms of t
 ## Table of Contents
 
 1. [Project Overview](#project-overview)
-2. [Model Architecture](#model-architecture)
-3. [Implementation](#implementation)
-4. [Training](#training)
-5. [Results](#results)
-6. [Examples](#examples)
-7. [BLEU Score](#bleu-score)
-8. [Conclusion](#conclusion)
+2. [Implementation](#implementation)
+3. [Training](#training)
+4. [Results](#results)
+5. [Examples](#examples)
 
 ---
 
